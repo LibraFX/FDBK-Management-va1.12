@@ -29,7 +29,10 @@ export const DefaultStyles = {
       font-weight: 700;
       text-align: left;
       margin-left: 388px;
-      `,
+    `,
+    ComponentTitleContainter: styled.div`
+      width: 400px;
+    `,
   },
   // Primary display and content
   ContentComponents: {
@@ -105,6 +108,12 @@ export const DefaultStyles = {
       color: #ffffff;
       text-align: center;
       outline: none;
+    `,
+    ComponentTitle: styled.b`
+      color: #ffffff;
+      font-family: 'Roboto', Sans Serif;
+      font-weight: 700;
+      font-size: 18px;
     `,
   },
 };

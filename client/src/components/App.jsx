@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import $ from 'jquery';
 import ReviewComponent from './ReviewComponent';
 import ReviewList from './ReviewSRC/seeReviews/ReviewList';
 import ReviewForm from './ReviewSRC/makeReviews/ReviewForm';
@@ -33,12 +34,17 @@ class App extends React.Component {
     this.setState({
       view: option,
     });
+    if (!option) {
+      $('body').css('overflow: visible');
+      $('body').css('height: 100%');
+    } else {
+      $('body').css('overflow: hidden');
+      $('body').css('height: 100vh');
+    }
   }
 
   render() {
     const Page = styled.div`
-      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-      ::-webkit-scrollbar {display:none;}
       margin: 0;
       padding: 0;
       width: 100%;
