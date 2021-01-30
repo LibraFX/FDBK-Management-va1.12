@@ -35,11 +35,11 @@ class App extends React.Component {
       view: option,
     });
     if (!option) {
-      $('body').css('overflow: visible');
-      $('body').css('height: 100%');
+      $('body').css({ overflow: 'visible' });
+      $('body').css({ height: '100%' });
     } else {
-      $('body').css('overflow: hidden');
-      $('body').css('height: 100vh');
+      $('body').css({ overflow: 'hidden' });
+      $('body').css({ height: '100vh' });
     }
   }
 
