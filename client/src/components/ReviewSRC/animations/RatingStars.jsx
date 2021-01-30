@@ -37,11 +37,8 @@ class RatingStars extends React.Component {
   }
 
   onSaveRating(index) {
-    const { starHandler } = this.props;
-    starHandler(index, () => {
-      this.setState({
-        rating: index,
-      });
+    this.setState({
+      rating: index,
     });
   }
 

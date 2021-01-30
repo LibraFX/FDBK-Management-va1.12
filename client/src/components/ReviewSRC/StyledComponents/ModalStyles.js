@@ -4,38 +4,45 @@ import styled from 'styled-components';
 export const ModalStyles = {
   ReviewContainers: {
     ModalContainer: styled.div`
-      position: absolute;
       display: flex;
       flex-direction: column;
-      height: 100%;
+      position: absolute;
       width: 100%;
+      height: 100vh;
       z-index: 2;
+      top: 0;
+      left 0;
+      overflow-y: hidden;
       cursor: pointer;
       align-items: center;
     `,
     Overlay: styled.div`
       background-color: rgba(0,0,0,0.45);
+      overflow-y: hidden;
+      position: fixed;
       display: flex;
-      position: absolute;
       width: 100%;
       height: 100%;
-      position: absolute;
       z-index: 3;
     `,
     SeeReviewsContainer: styled.div`
       display: flex;
       flex-direction: column;
+      margin-top: 80px;
       width: 1339px;
-      height: 95%;
+      height: 720px;
+      position: fixed;
       background-color: rgba(255,255,255,1);
       border-radius: .5%;
       border: solid rgba(255,255,255,.8);
       overflow-y: auto;
       overflow-x: hidden;
       box-shadow:5px 5px 2.5px rgba(0,0,0,.4);
-      z-index: 4;
+      z-index: 9999;
     `,
     WriteReviewsContainer: styled.div`
+      position: fixed;
+      margin-top: 80px;
       display: flex;
       width: 1168px;
       height: 678px;
@@ -46,7 +53,7 @@ export const ModalStyles = {
       overflow-y: auto;
       overflow-x: hidden;
       box-shadow:5px 5px 2.5px rgba(0,0,0,.4);
-      z-index: 4;
+      z-index: 9999;
       font-family: 'Roboto', Sans Serif;
       color: #000000;
     `,
@@ -56,6 +63,8 @@ export const ModalStyles = {
     ExitButtonContainer: styled.div`
       width: 100%;
       display: flex;
+      position: fixed;
+      z-index: 4;
       justify-content: flex-end;
     `,
     PaginationContainer: styled.div`
@@ -64,7 +73,7 @@ export const ModalStyles = {
       z-index: 5;
       display: flex;
       justify-content: space-between;
-      position: absolute;
+      position: fixed;
       .pagination {
         display: flex;
         font-family: 'Roboto', Sans Serif;

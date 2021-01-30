@@ -69,9 +69,9 @@ const ReviewList = (props) => {
   return (
     <FadeIn delay={250} duration={300}>
       <ModalContainer>
-        <Overlay onClick={() => changeView('null')} />
+        <Overlay onClick={() => changeView(null)} />
         <ExitButtonContainer>
-          <ExitButton onClick={() => changeView('null')}><u>Close (x)</u></ExitButton>
+          <ExitButton onClick={() => changeView(null)}><u>Close (x)</u></ExitButton>
         </ExitButtonContainer>
         <SeeReviewsContainer id="review-container">
           <PaginationContainer>
