@@ -65,16 +65,6 @@ export const DefaultStyles = {
       font-weight: 700;
       text-align: left;
   `,
-    QuestionIcon: styled.button`
-      background-color: #999999;
-      border: none;
-      border-radius: 100%;
-      display: inline;
-      margin: 10px;
-      font-size: 12px;
-      text-align: left;
-      outline: none;
-  `,
     SeeReviewsButton: styled.button`
       background-color: #ffffff;
       cursor: pointer;
@@ -117,3 +107,4 @@ export const DefaultStyles = {
     `,
   },
 };
+

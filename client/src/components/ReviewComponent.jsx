@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { DefaultStyles } from './ReviewSRC/StyledComponents/DefaultStyles';
+import RatingStats from './ReviewSRC/ReviewStats/RatingStats';
 
 const propTypes = {
   product: PropTypes.object,
@@ -30,7 +31,6 @@ const ReviewComponent = (props) => {
     ContentTitle,
     ContentBody,
     ContentStats,
-    QuestionIcon,
     SeeReviewsButton,
     WriteReviewsButton,
     ComponentTitle,
@@ -66,7 +66,7 @@ const ReviewComponent = (props) => {
               <span>
                 {basedText}
               </span>
-              <QuestionIcon>?</QuestionIcon>
+              <RatingStats />
             </ContentStats>
           </div>
           <div>
@@ -82,7 +82,6 @@ const ReviewComponent = (props) => {
               <span>
                 34% reviewers
               </span>
-              <QuestionIcon>?</QuestionIcon>
             </ContentStats>
           </div>
           <div>
